@@ -4,6 +4,7 @@ This is the config file for the MTConnect agent of Sovol Ace Printer for ME597 C
 MTConnect has several available standards documents detailing correct formatting for dataItems and the config file in general.
 Please refer to the MTConnect standard documentation for more information about how to modify this file.
 Created by Trevor Kates on 2/11/2026
+Read more about the XML data structure on this Google sheet: https://docs.google.com/spreadsheets/d/1USQvGvC8SHUuFOWi_LOtpQju_SxD1xpkkGeocQ5PY7o/edit?gid=1204488128#gid=1204488128
 -->
 
 <MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.5" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.5 http://www.mtconnect.org/schemas/MTConnectDevices_1.5.xsd">
