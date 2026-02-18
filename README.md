@@ -3,12 +3,12 @@
 ## Project Overview
 This repository contains the MTConnect Agent and Adapter configuration for the **Sovol SV06 Ace** 3D printer. This project is part of a research initiative for **ME498/ME597** at Purdue University, focusing on the autonomous synchronization between a 3D printer and a robotic manipulator arm. 
 
-By leveraging the **MTConnect** standard, we provide a vendor-neutral data stream that allows the robotic arm to monitor printer status, nozzle coordinates, and safety sensors in real-time to facilitate automated part removal.
+Using **MTConnect** standards, we provide a data stream that allows the robotic manipulator arm to monitor printer status, nozzle coordinates, and safety sensors to facilitate automated part removal.
 
 ---
 
 ## System Architecture
-The system follows a three-tier architecture:
+The system follows a three-tier set-up:
 1. **Source (Sovol Ace)**: A Klipper-based 3D printer running a Moonraker API.
 2. **Adapter (Python)**: A custom script running on a **Raspberry Pi 4** that polls the Klipper API and translates the JSON data into MTConnect SHDR format.
 3. **Agent (C++)**: The MTConnect Agent that ingests the SHDR data and serves it as structured XML over HTTP on port 5001.
